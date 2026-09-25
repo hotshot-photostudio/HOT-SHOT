@@ -1,0 +1,462 @@
+*{box-sizing:border-box}html,body{margin:0;background:#191919;color:#f4f4f4;font-family:Arial,Helvetica,sans-serif}body{min-height:100vh;display:flex;flex-direction:column}.header{height:205px;padding:28px 4%;position:relative}.logo{width:96px;height:96px;object-fit:contain;display:block}.nav{position:absolute;top:35px;left:50%;transform:translateX(-50%);display:flex;gap:44px;align-items:center}.nav>a,.dropbtn{font-family:inherit;font-size:16px;line-height:1.2;color:#fff;text-decoration:none;background:none;border:0;cursor:pointer;padding:0}.dropbtn{display:flex;align-items:center;gap:9px}.chevron{width:12px;height:7px;display:block;flex:none;transition:transform .18s ease}.dropdown:hover .chevron{transform:rotate(180deg)}.nav>a,.dropmenu a{position:relative}.dropbtn>span{position:relative}.nav>a::after,.dropbtn>span::after,.dropmenu a::after{content:"";position:absolute;left:0;right:0;bottom:-5px;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left center;transition:transform .25s ease}.nav>a:hover::after,.nav>a[aria-current="page"]::after,.dropbtn:hover>span::after,.dropdown:hover .dropbtn>span::after,.dropbtn[aria-current="page"]>span::after,.dropmenu a:hover::after,.dropmenu a[aria-current="page"]::after{transform:scaleX(1)}.dropdown{position:relative}.dropmenu{display:none;position:absolute;top:100%;left:0;min-width:160px;padding:7px 0 0;background:#191919;border:0;z-index:20}.dropdown:hover .dropmenu{display:flex;flex-direction:column;gap:12px}.dropmenu a{color:#fff;text-decoration:none;font-size:16px;white-space:nowrap}.social{position:absolute;right:4%;top:32px;display:flex;gap:22px}.social a{color:#fff;text-decoration:none;width:30px;height:30px;display:block;line-height:0}.social-icon{width:100%;height:100%;display:block}.homegrid{display:grid;grid-template-columns:repeat(3,1fr);gap:6.5%;padding:10px 4% 70px;margin-top:-50px}.tile{height:550px;position:relative;overflow:hidden;text-decoration:none;color:#fff}.tile img{width:100%;height:100%;object-fit:cover;display:block}.tile span{position:absolute;inset:0;display:grid;place-items:end center;padding-bottom:88px;font-size:30px}.tile span:after{content:"";position:absolute;left:50%;top:auto;bottom:68px;width:164px;height:1px;background:#fff;transform:translateX(-50%);opacity:0}.tile:hover span:after{opacity:1}.gallery{flex:1;overflow:hidden;padding:10px 0 50px;margin-top:-50px}.slider{height:calc(100vh - 322px);height:max(180px,calc(100vh - 322px));min-height:0;overflow:hidden;position:relative;padding-left:3.5%}.track{height:100%;display:flex;gap:18px;align-items:center;position:relative;transition:transform 1s ease}.slide{height:100%;width:auto;flex:0 0 auto;object-fit:cover;cursor:pointer}.arrow{position:absolute;top:50%;transform:translateY(-50%);width:46px;height:46px;border-radius:50%;border:0;background:#f1f1f1;color:#333;display:grid;place-items:center;padding:0;line-height:0;cursor:pointer}.arrow svg{display:block;width:20px;height:20px}.prev{left:24px}.next{right:24px}.lightbox{display:none;position:fixed;inset:0;background:#191919;z-index:100;align-items:center;justify-content:center}.lightbox.open{display:flex}.lightbox img{max-width:92vw;max-height:88vh;object-fit:contain}.close{position:absolute;top:18px;right:28px;background:none;border:0;color:#fff;font-size:44px;cursor:pointer}.content{flex:1;max-width:1480px;margin:auto;padding:5px 3.5% 65px}.price-content{width:100%;max-width:none;padding:5px 5.6% 65px}.content h1{font-size:56px;font-weight:400;margin:0 0 24px}.content h2{font-size:42px;font-weight:400;margin:48px 0 24px}.content p{font-size:16px;line-height:1.35;margin:0 0 21px}.content a{color:#fff}.studio{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:30px 0 48px}.studio img{width:100%;height:310px;object-fit:cover}.price-content .studio{gap:48px;margin:30px 0 48px}.price-content .studio img{height:460px}.prices{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.price{border:1px solid #aaa;padding:24px;min-height:610px;display:flex;flex-direction:column}.price-content .prices{width:calc(100% + 80px);margin-left:-40px;gap:24px}.price-content .price{min-height:610px;padding:40px 40px 50px}.price-content .price h3{min-height:84px;margin:0 0 20px}.price-content .price .btn{align-self:stretch;text-align:center;padding:22px 20px}.price-content .price-note{width:calc(100% + 80px);margin:32px 0 21px -40px}.price h3{font-size:20px;font-weight:400;min-height:56px}.price p{font-size:16px}.btn{margin-top:auto;align-self:flex-start;background:#fff;color:#191919!important;text-decoration:none;padding:14px 28px;border:0;font-size:16px;cursor:pointer}.contact{flex:1;display:grid;grid-template-columns:200px minmax(400px,850px);gap:30px;justify-content:center;padding:65px 5%;margin-top:-100px}.contacticons{display:flex;gap:22px;padding-top:60px}.contacticons a{color:#fff;text-decoration:none;width:38px;height:38px;display:block;line-height:0}.contacticons .social-icon{width:38px;height:38px}.form{display:flex;flex-direction:column}.form label{font-weight:700;margin-bottom:4px}.form input,.form textarea{width:100%;background:transparent;color:#fff;border:1px solid #777;padding:14px;font:inherit;margin-bottom:12px}.form input{height:50px}.form textarea{height:130px;resize:vertical}footer{padding:21px 6%;font-size:15px;margin-top:auto}@media(max-width:800px){.header{height:125px;padding:18px 5%}.logo{width:68px;height:68px}.nav{top:25px;right:5%;left:auto;transform:none;gap:16px}.nav>a,.dropbtn{font-size:14px}.social{right:5%;top:82px}.social a{width:22px;height:22px}.homegrid{grid-template-columns:1fr;gap:20px;padding:25px 5% 45px;margin-top:0}.tile{height:60vh;min-height:360px}.gallery{overflow:visible;padding:10px 0 30px;margin-top:0}.slider{height:auto;min-height:0;overflow:visible;padding:0}.track{height:auto;display:flex;flex-direction:column;gap:18px;transform:none!important;transition:none}.slide.clone{display:none}.slide{display:block;width:100%;max-width:100%;height:auto;object-fit:contain;cursor:default}.arrow{display:none}.content{padding:8px 5% 45px}.price-content{padding:8px 5% 45px}.price-content .studio{grid-template-columns:1fr;gap:18px;margin:30px 0 42px}.price-content .studio img{height:240px}.price-content .prices{width:auto;margin-left:0;grid-template-columns:1fr;gap:20px}.price-content .price{min-height:0;padding:24px}.price-content .price h3{min-height:0}.price-content .price .btn{align-self:stretch;padding:14px 28px}.price-content .price-note{width:auto;margin:24px 0 21px}.content h1{font-size:39px}.content h2{font-size:31px}.studio{grid-template-columns:1fr}.studio img{height:240px}.prices{grid-template-columns:1fr}.price{min-height:0}.contact{grid-template-columns:1fr;padding:45px 8%;margin-top:0}.contacticons{padding:0}.dropmenu{right:0;left:auto}.lightbox img{max-width:96vw;max-height:84vh}}
+@media (min-width: 801px) { .price-content { position: relative; top: -50px; } }
+
+@media (min-width: 801px) { .price-content .studio img { height: auto; align-self: start; object-fit: contain; } .price-content .price { padding-left: 24px; padding-right: 24px; } .price-content .price h3 { height: 84px; min-height: 84px; flex: 0 0 84px; } }
+
+@media (min-width: 801px) { .price-content .price p { font-size: 14px; } }
+
+@media (min-width: 801px) { .price-content .prices { gap: 16px; } }
+
+.price-content .price p { font-size: 14px; }
+.price-content .price h3 { font-size: 16px; }
+@media (max-width: 800px) { .price-content .price { padding-left: 18px; padding-right: 18px; } }
+
+@media (max-width: 800px) { .price-content .price p { font-size: 13px; } .price-content .price { padding-left: 16px; padding-right: 16px; } }
+
+@media (min-width: 801px) { .price-content .price p { font-size: 12px; } }
+
+@media (min-width: 801px) { .price-content .price .btn { margin-bottom: 50px; } }
+
+@media (min-width: 801px) { .price-content .price { min-height: 560px; } }
+
+@media (min-width: 801px) { .price-content .prices { align-items: start; } .price-content .price { min-height: 0; padding-bottom: 21px; } .price-content .price .btn { margin-top: 0; margin-bottom: 0; } }
+
+@media (min-width: 801px) { .price-content .prices { align-items: stretch; } .price-content .price { min-height: 560px; padding-bottom: 50px; } .price-content .price .btn { margin-top: auto; margin-bottom: 0; } }
+
+@media (min-width: 801px) { .price-content .price > p:last-of-type { margin-top: auto; } .price-content .price .btn { margin-top: 0; } }
+
+.logo { width: 64px; height: 64px; }
+.dropmenu a { align-self: flex-start; }
+@media (max-width: 800px) { .logo { width: 45px; height: 45px; } }
+
+.nav>a, .dropbtn { font-size: 10.67px; }
+.dropmenu a { font-size: 10.67px; }
+.dropdown:hover .dropmenu { gap: 8px; }
+main { position: relative; top: -33px; }
+@media (min-width: 801px) { main.price-content { top: -83px; } }
+@media (max-width: 800px) { .nav>a, .dropbtn { font-size: 9.33px; } main { top: -32px; } }
+
+.social a { width: 20px; height: 20px; }
+.contacticons a, .contacticons .social-icon { width: 25px; height: 25px; }
+@media (max-width: 800px) { .social a { width: 15px; height: 15px; } }
+
+@media (min-width: 801px) {
+  .gallery { height: max(294px, calc(130vh - 293.6px)); flex: 0 0 auto; overflow: visible; }
+  .slider { height: max(234px, calc(130vh - 353.6px)); }
+}
+
+@media (max-width: 800px) {
+  .nav {
+    left: calc(52.5% + 22.5px);
+    right: auto;
+    transform: translateX(-50%);
+    width: max-content;
+  }
+  .social {
+    top: 75px;
+    left: 5%;
+    right: auto;
+    width: 45px;
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+  }
+  .dropmenu {
+    left: 0;
+    right: auto;
+  }
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+}
+
+.contact .form {
+  width: min(850px, 100%);
+}
+
+.contact .btn {
+  padding: 9.33px 18.67px;
+  font-size: 10.67px;
+}
+
+@media (max-width: 800px) {
+  .contact .form {
+    font-size: 9.33px;
+  }
+}
+
+footer {
+  font-size: 10.67px;
+}
+
+@media (max-width: 800px) {
+  footer {
+    font-size: 9.33px;
+  }
+}
+
+@media (min-width: 801px) {
+  main.price-content {
+    top: -83px;
+  }
+  .contact {
+    padding-top: 60px;
+  }
+}
+
+@media (max-width: 800px) {
+  .homegrid,
+  .price-content,
+  .contact {
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .dropmenu a {
+    font-size: 9.33px;
+  }
+}
+
+footer {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+@media (min-width: 801px) {
+  .homegrid,
+  .contact {
+    padding-bottom: 73px;
+  }
+  .gallery {
+    height: max(317px, calc(130vh - 270.6px));
+    padding-bottom: 73px;
+  }
+  .price-content {
+    padding-bottom: 14px;
+  }
+}
+
+@media (max-width: 800px) {
+  .homegrid,
+  .gallery,
+  .price-content,
+  .contact {
+    padding-bottom: 72px;
+  }
+  .price-content {
+    padding-bottom: 51px;
+  }
+}
+
+.content,
+.contact {
+  flex: 0 0 auto;
+}
+
+.content {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.contact {
+  align-items: flex-start;
+}
+
+/* Footer spacing: keep the gallery's natural content height on mobile and match the desktop price page to the shared bottom gap. */
+@media (min-width: 801px) {
+  .price-content {
+    padding-bottom: 52px;
+  }
+}
+
+@media (max-width: 800px) {
+  .gallery {
+    flex: 0 0 auto;
+  }
+}
+
+/* Keep the footer in normal document flow directly after the page content. */
+body > footer {
+  margin-top: 0 !important;
+}
+
+/* Let each page end after its content so viewport height cannot create a blank footer gap. */
+body {
+  min-height: 0;
+}
+
+/* Pricelist typography: halve section headings and match descriptive copy to price-card copy. */
+.price-content h1 {
+  font-size: 28px;
+}
+
+.price-content h2 {
+  font-size: 21px;
+}
+
+.price-content > p {
+  font-size: 12px;
+}
+
+@media (max-width: 800px) {
+  .price-content h1 {
+    font-size: 19.5px;
+  }
+  .price-content h2 {
+    font-size: 15.5px;
+  }
+  .price-content > p {
+    font-size: 13px;
+  }
+}
+
+/* Tighten only the desktop spacing between descriptive paragraphs in price cards. */
+@media (min-width: 801px) {
+  .price-content .price > p:not(:last-of-type) {
+    margin-bottom: 21px;
+  }
+}
+
+/* Match the original paragraph rhythm; compact desktop contact buttons vertically. */
+@media (min-width: 801px) {
+  .price-content .price .btn {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+/* Refine desktop card rhythm while keeping all price rows aligned. */
+@media (min-width: 801px) {
+  .price-content .price {
+    min-height: 540px;
+  }
+  .price-content .price h3 {
+    margin-bottom: 12px;
+  }
+}
+
+/* Match desktop card edge and heading gaps to the paragraph spacing. */
+@media (min-width: 801px) {
+  .price-content .price {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+  .price-content .price h3 {
+    margin-bottom: 21px;
+  }
+}
+
+/* Desktop price cards: 21px rhythm, aligned price rows, compact buttons. */
+@media (min-width: 801px) {
+  .price-content .price {
+    min-height: 540px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+  .price-content .price h3 {
+    margin-bottom: 21px;
+  }
+  .price-content .price > p:not(:last-of-type) {
+    margin-bottom: 21px;
+  }
+  .price-content .price > p:last-of-type {
+    margin-top: auto;
+    margin-bottom: 21px;
+  }
+  .price-content .price .btn {
+    margin-top: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+/* Right price card only: use the paragraph gap between title, description and prices. */
+@media (min-width: 801px) {
+  .price-content .price:nth-child(3) {
+    min-height: 0;
+    align-self: start;
+  }
+  .price-content .price:nth-child(3) h3 {
+    height: auto;
+    min-height: 0;
+    flex: 0 0 auto;
+    margin-bottom: 21px;
+  }
+  .price-content .price:nth-child(3) > p:last-of-type {
+    margin-top: 0;
+    margin-bottom: 21px;
+  }
+  .price-content .price:nth-child(3) .btn {
+    margin-top: 0;
+  }
+}
+
+/* Match the other two desktop cards to the right card while keeping price rows on one baseline. */
+@media (min-width: 801px) {
+  .price-content .price:nth-child(-n + 2) {
+    min-height: 0;
+  }
+  .price-content .price:nth-child(-n + 2) h3 {
+    height: auto;
+    min-height: 0;
+    flex: 0 0 auto;
+    margin-bottom: 21px;
+  }
+  .price-content .price:nth-child(-n + 2) > p:last-of-type {
+    margin-top: auto;
+    margin-bottom: 21px;
+  }
+}
+
+/* Align the first description line with the three-line title block in the right card. */
+@media (min-width: 801px) {
+  .price-content .price:nth-child(-n + 2) h3 {
+    height: 3lh;
+    min-height: 3lh;
+    flex: 0 0 3lh;
+  }
+}
+
+/* Keep desktop home tiles at the reference proportions on wider screens. */
+@media (min-width: 801px) {
+  .homegrid .tile {
+    height: auto;
+    aspect-ratio: 0.77;
+  }
+}
+
+/* Match the home category labels to the reference at desktop and mobile sizes. */
+.homegrid .tile span {
+  font-size: 24px;
+}
+
+.homegrid .tile span::after {
+  bottom: 75px;
+}
+
+@media (max-width: 800px) {
+  .homegrid .tile span {
+    padding-bottom: 72px;
+    font-size: 20px;
+  }
+
+  .homegrid .tile span::after {
+    bottom: 60px;
+  }
+}
+
+/* Align home category captions to the reference, scaling their placement with each tile. */
+.homegrid .tile > span {
+  padding: 0;
+}
+
+.homegrid .tile > span::after {
+  display: none;
+}
+
+.homegrid .tile > span > .tile-label {
+  position: absolute;
+  left: 50%;
+  bottom: 16%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.homegrid .tile-label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(100% + 11px);
+  height: 1px;
+  background: #fff;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.25s ease;
+}
+
+.homegrid .tile:hover .tile-label::after {
+  transform: scaleX(1);
+}
+
+@media (max-width: 800px) {
+  .homegrid .tile > span > .tile-label {
+    font-size: 18px;
+  }
+
+  .homegrid .tile-label::after {
+    top: calc(100% + 7px);
+  }
+}
+
+/* Final home label positioning: reset inherited full-tile overlay styles on the text itself. */
+.homegrid .tile > span > .tile-label {
+  inset: auto;
+  top: auto;
+  right: auto;
+  display: block;
+  width: max-content;
+  bottom: 16%;
+  font-size: clamp(18px, 1.875vw, 30px);
+}
+
+.homegrid .tile-label::after {
+  top: calc(100% + 0.7vw);
+}
+
+@media (max-width: 800px) {
+  .homegrid .tile > span > .tile-label {
+    font-size: clamp(14px, 1.875vw, 18px);
+  }
+
+  .homegrid .tile-label::after {
+    top: calc(100% + 0.7vw);
+  }
+}
+
+/* Home tile labels: isolate the text from the legacy full-tile overlay rules. */
+.homegrid .tile > span > .tile-label {
+  all: unset;
+  position: absolute;
+  left: 50%;
+  bottom: 16%;
+  display: block;
+  width: max-content;
+  transform: translateX(-50%);
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(16px, 1.5vw, 24px);
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.homegrid .tile-label::after {
+  top: calc(100% + 0.7vw);
+}
+
+@media (max-width: 800px) {
+  .homegrid .tile > span > .tile-label {
+    font-size: 16px;
+  }
+
+  .homegrid .tile-label::after {
+    top: calc(100% + 6px);
+  }
+}
+
+/* Let the home hover rule span only the caption text, not the legacy fixed line width. */
+.homegrid .tile-label::after {
+  width: auto;
+  bottom: auto;
+}
+
+/* Keep the desktop navigation above page content that is shifted into the header area. */
+@media (min-width: 801px) {
+  .header {
+    z-index: 40;
+  }
+}
