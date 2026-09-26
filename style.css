@@ -355,3 +355,12 @@ body { min-height: 0px; }
     object-fit: cover;
   }
 }
+
+
+/* Keep the space before the footer equal to the 40px logo-to-content gap. */
+.homegrid,
+.gallery,
+.price-content,
+.contact {
+  padding-bottom: 40px;
+}
