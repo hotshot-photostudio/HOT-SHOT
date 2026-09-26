@@ -357,10 +357,14 @@ body { min-height: 0px; }
 }
 
 
-/* Keep the space before the footer equal to the 40px logo-to-content gap. */
+/* Match footer spacing to the measured logo-to-content gap at all viewport sizes. */
 .homegrid,
 .gallery,
 .price-content,
 .contact {
-  padding-bottom: 40px;
+  padding-bottom: 60px;
+}
+
+.price-content > :last-child {
+  margin-bottom: 0;
 }
