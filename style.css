@@ -332,3 +332,13 @@ body { min-height: 0px; }
   .nav > a::after, .dropbtn > span::after, .dropmenu a::after { bottom: -1px; }
   main { top: 8px; }
 }
+
+@media (min-width: 801px) {
+  .homegrid {
+    width: min(88vw, 1440px);
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(24px, 6.5vw, 88px);
+  }
+}
