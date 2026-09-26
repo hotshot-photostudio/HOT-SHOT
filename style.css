@@ -398,3 +398,15 @@ body { min-height: 0px; }
     height: auto;
   }
 }
+
+
+/* Desktop: align footer with logo and shorten the contact form from the right. */
+@media (min-width: 801px) {
+  body > footer {
+    padding-left: 4%;
+  }
+  .contact .form {
+    width: 547px;
+    transform: translateX(-151.5px);
+  }
+}
