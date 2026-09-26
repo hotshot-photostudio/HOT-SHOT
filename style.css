@@ -428,6 +428,6 @@ body { min-height: 0px; }
 /* Keep a comfortable right margin on narrow phones. */
 @media (max-width: 800px) {
   .nav {
-    right: max(5%, 30px);
+    right: 5%;
   }
 }
