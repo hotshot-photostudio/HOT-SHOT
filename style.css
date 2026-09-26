@@ -410,3 +410,16 @@ body { min-height: 0px; }
     transform: translateX(calc((min(425px, 45vw) + 122.67px - min(850px, 90vw)) / 2));
   }
 }
+
+
+/* Mobile navigation fills the space between the logo and screen edges. */
+@media (max-width: 800px) {
+  .nav {
+    left: calc(10% + 67.5px);
+    right: 5%;
+    width: auto;
+    transform: none;
+    justify-content: space-between;
+    gap: clamp(8px, 3vw, 24px);
+  }
+}
