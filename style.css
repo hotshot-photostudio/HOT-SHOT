@@ -423,3 +423,11 @@ body { min-height: 0px; }
     gap: clamp(8px, 3vw, 24px);
   }
 }
+
+
+/* Keep a comfortable right margin on narrow phones. */
+@media (max-width: 800px) {
+  .nav {
+    right: max(5%, 30px);
+  }
+}
