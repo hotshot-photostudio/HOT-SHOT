@@ -390,3 +390,11 @@ body { min-height: 0px; }
     margin-top: 8px !important;
   }
 }
+
+
+/* Let the desktop gallery container end at its slider, without a second fixed-height spacer. */
+@media (min-width: 801px) {
+  .gallery {
+    height: auto;
+  }
+}
