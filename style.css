@@ -335,10 +335,22 @@ body { min-height: 0px; }
 
 @media (min-width: 801px) {
   .homegrid {
-    width: min(88vw, 1440px);
-    margin-left: auto;
-    margin-right: auto;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    display: flex;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: center;
+    align-items: flex-start;
     gap: clamp(24px, 6.5vw, 88px);
+  }
+  .homegrid .tile {
+    flex: 0 0 auto;
+    width: max-content;
+    height: min(550px, 37vw);
+  }
+  .homegrid .tile img {
+    width: auto;
+    height: 100%;
+    object-fit: contain;
   }
 }
