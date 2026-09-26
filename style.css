@@ -357,14 +357,36 @@ body { min-height: 0px; }
 }
 
 
-/* Match footer spacing to the measured logo-to-content gap at all viewport sizes. */
-.homegrid,
-.gallery,
-.price-content,
-.contact {
-  padding-bottom: 60px;
-}
-
+/* Keep the footer aligned with the visible content after the page relative top offsets. */
 .price-content > :last-child {
   margin-bottom: 0;
+}
+
+@media (min-width: 801px) {
+  .homegrid,
+  .gallery,
+  .contact {
+    padding-bottom: 40px;
+  }
+  .price-content {
+    padding-bottom: 35px;
+  }
+  body > main + footer {
+    margin-top: -33px !important;
+  }
+  body > main.price-content + footer {
+    margin-top: -83px !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .homegrid,
+  .gallery,
+  .price-content,
+  .contact {
+    padding-bottom: 70px;
+  }
+  body > main + footer {
+    margin-top: 8px !important;
+  }
 }
